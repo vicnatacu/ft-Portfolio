@@ -10,13 +10,17 @@
 
 img {
     max-width: 100%;
-    heigth: auto;
+    height: auto;
 }
 
+
+
 #page {
+    @include full-width-centered();
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -93,12 +97,40 @@ nav {
 
 header {
     @include full-width-centered();
-    background-color: #B64E64;
+    background-color:rgb(231, 129, 178);
     height: 200px;
     font-family: 'Kaushan Script', cursive;
 }
 
+.headericon {
+    height: 50px;
+    margin: 0.5em;
+    margin-bottom: 0;
+}
+
+footer {
+    order: 2;
+    height: 90px;
+    width: 100%;
+    background: #6E069E;
+    color: white;
+    padding: 1em;
+}
+
+.footericon {
+        height: 30px;
+        margin: 0.5em;
+        margin-bottom: 0;
+         
+ 
+}
+
+
+
+
+
 body {
+    
 
     #desktop,
     #tablet {
@@ -113,19 +145,21 @@ body {
 
 main {
     @include full-width-centered();
-    height: 600px;
-    background-color: #eaedf0;
-    font-family: 'Open Sans', sans-serif;
+    height: auto;
+ 
 
-    h2,
-    h3 {
+    h2, h3 {
         text-align: center;
     }
 }
 
+.whitebg {
+    background: white;
+}
+
 section {
     @include full-width-centered;
-    height: 300px;
+    min-height: 300px;
 
     &.banner {
         display: flex;
@@ -136,8 +170,8 @@ section {
 
     &.about {
         width: 80%;
-        background: white;
-        margin: 20% auto;
+        background: white !important;
+        margin: 10% auto;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -148,7 +182,24 @@ section {
             padding-left: 20px;
 
         }
+        table {
+            th {
+                padding: 12px 6px;
+                text-align: left;
+                background-color: #A974C4;
+                color: white;
+            }
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;   
+            }
+
+        }
      
+       
 
     }
 
@@ -156,6 +207,9 @@ section {
 
 h1 {
     font-family: 'Kaushan Script', cursive;
+    &#name {
+        background-color: #B64E64;
+    }
 }
 
 
@@ -190,8 +244,7 @@ h1 {
 @media only screen and (min-width: 961px) {
     body {
         background-color: #C9A0BE;
-        opacity: 0.5;
-        background-size: cover;
+       
 
         #tablet,
         #mobile {
@@ -203,10 +256,10 @@ h1 {
         }
     }
 
-    header {
-        height: 300px;
+    // header {
+    //     height: 300px;
 
-    }
+    // }
 
     .feature-1,
     .feature-2,
@@ -214,14 +267,7 @@ h1 {
         width: 33.33%;
     }
 
-    footer {
-        order: 2;
-        height: 50px;
-        width: 100%;
-        background: #6E069E;
-        color: white;
-        padding: 1em;
-    }
+    
 
     main {
         order: 1;
