@@ -82,7 +82,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #B64E64;
-  height: 70px;
+  height: 75px;
   font-family: 'Kaushan Script', cursive;
 }
 
@@ -105,7 +105,16 @@ header #headericons {
 }
 
 header #headericons a.headericon {
+  margin: 8px;
   padding: 0 10px;
+}
+
+.more {
+  display: none;
+}
+
+.more #myBtn {
+  display: inline-block;
 }
 
 footer {
@@ -121,7 +130,7 @@ footer {
 
 .footericon {
   height: 30px;
-  margin: 0.5em;
+  margin: 1em;
   margin-bottom: 0;
 }
 
@@ -208,6 +217,7 @@ section.about table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -216,10 +226,6 @@ section.about table tr:nth-child(even) {
     float: right;
     display: block;
   }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
