@@ -239,6 +239,14 @@ section.about table tr:nth-child(even) {
     display: block;
     text-align: left;
   }
+  footer {
+    padding: 0.5em;
+  }
+  .footericon {
+    height: 20px;
+    margin: 0;
+    margin-bottom: 0;
+  }
 }
 
 /* Tablet styles */
