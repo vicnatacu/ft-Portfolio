@@ -89,7 +89,7 @@ header #headericons {
 
 .more {
     display: none;
-    #myBtn {
+    &.myBtn {
         display: inline-block;
        
     }
@@ -193,8 +193,9 @@ section {
 
 }
 
-
-
+.hide-me {
+    display: none;
+}
 
 
 
