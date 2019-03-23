@@ -11,6 +11,8 @@
 img {
     max-width: 100%;
     height: auto;
+    min-height: 20px;
+    min-width: 20px;
 }
 
 
@@ -232,6 +234,9 @@ section {
         height: 20px;
         margin: 0;
         margin-bottom: 0;
+    header {
+        flex-wrap: wrap;
+    }
          
  
 }

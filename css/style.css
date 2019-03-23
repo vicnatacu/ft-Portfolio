@@ -9,6 +9,8 @@
 img {
   max-width: 100%;
   height: auto;
+  min-height: 20px;
+  min-width: 20px;
 }
 
 #page {
@@ -250,6 +252,10 @@ section.about table tr:nth-child(even) {
     height: 20px;
     margin: 0;
     margin-bottom: 0;
+  }
+  .footericon header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
