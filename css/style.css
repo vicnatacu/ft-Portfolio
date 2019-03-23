@@ -156,7 +156,8 @@ main {
   height: auto;
 }
 
-main h2, main h3 {
+main h2,
+main h3 {
   text-align: center;
 }
 
@@ -219,6 +220,17 @@ section.about table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
+#projects a img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+  margin: 30px;
+}
+
 .hide-me {
   display: none;
 }
@@ -274,8 +286,9 @@ section.about table tr:nth-child(even) {
   body header {
     height: 50px;
   }
-  section {
-    width: 50%;
+  section a img {
+    width: 100%;
+    margin: 10px;
   }
 }
 
@@ -290,11 +303,6 @@ section.about table tr:nth-child(even) {
   }
   body #desktop {
     display: block;
-  }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 33.33%;
   }
   main {
     -webkit-box-ordinal-group: 2;
